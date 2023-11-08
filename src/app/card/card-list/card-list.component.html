@@ -1,4 +1,5 @@
-<div class="row game-list mt-2">
+<div class="container"></div>
+<div class="row row cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mt-2 d-flex justify-content-center">
     <div *ngFor="let item of cardList | async" class="col">
         <app-card-item [data]="item"></app-card-item>
     </div>
