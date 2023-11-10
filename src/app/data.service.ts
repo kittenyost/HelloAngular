@@ -29,8 +29,8 @@ export class DataService {
   }
 
   // get 1 by id
-  getOneGame(id: string): void {
-
+  getOneGame(id: string): Observable<any> {
+    return this.http.get<any>(`${this.baseURL}/games/${id}`);
   }
 
 }
