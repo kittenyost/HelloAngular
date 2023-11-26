@@ -12,6 +12,9 @@ import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { CalloutComponent } from './Block/callout/callout.component';
+import { WishlistComponent } from './block/wishlist/wishlist.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { GameEditComponent } from './game-edit/game-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,16 @@ import { CalloutComponent } from './Block/callout/callout.component';
     CardItemComponent,
     CardListComponent,
     GameDetailComponent,
-    CalloutComponent
+    CalloutComponent,
+    WishlistComponent,
+    GameEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule
+
   ],
   providers: [
     DataService
